@@ -11,8 +11,8 @@ function removeTransition(e){
     key.classList.add('playing');
     audio.currentTime = 0;
     audio.play();
+    
   }
-
   const keys = Array.from(document.querySelectorAll('.key'));
   keys.forEach(key => key.addEventListener('transitionend', removeTransition));
   window.addEventListener('keydown', playSound);
